@@ -8,8 +8,6 @@ import java.util.Scanner;
 public class mediaAritimetica {
     public static void main(String[] args) {
 
-        
-        
         //Scanner para descobrir as 3 notas
         Scanner scanner = new Scanner(System.in);
                 System.out.print("Digite a sua PRIMEIRA nota (AC1): ");
@@ -33,17 +31,23 @@ public class mediaAritimetica {
                     float notaAS = scannerAs.nextFloat();
                 scannerAs.close();
 
-                //Verifica a menor nota e substitui ela pela prova AS
+                //Verifica se a AS é maior que alguma nota das outras avaliações
 
-                if (nota1 < nota2 && nota1 < nota3) {
-                    resultadoMedia = (notaAS + nota2 + nota3) / 3;
-                } else if (nota2 < nota1 && nota2 < nota3) {
-                    resultadoMedia = (nota1 + notaAS + nota3) / 3;
-                } else {
-                    resultadoMedia = (nota1 + nota2 + notaAS) / 3;
+                if (notaAS <= nota1 && notaAS <= nota2 && notaAS <= nota3) {
+                    System.out.printf("Sua nota da AS não superou nenhuma nota de outra avaliação, por conta disso sua média continua de %.1f \n", resultadoMedia);
+                } else { //Verifica a menor nota e substitui ela pela prova AS
+                    if (nota1 < nota2 && nota1 < nota3) {
+                        resultadoMedia = (notaAS + nota2 + nota3) / 3;
+                    } else if (nota2 < nota1 && nota2 < nota3) {
+                        resultadoMedia = (nota1 + notaAS + nota3) / 3;
+                    } else {
+                        resultadoMedia = (nota1 + nota2 + notaAS) / 3;
+                    }
+
+                    System.out.printf("Sua nota da prova AS sendo de: %.1f. E alterando sua menor nota, teremos que sua média vai ser de %.1f \n", notaAS, resultadoMedia);
                 }
-                
-                System.out.printf("Sua nota da prova AS sendo de: %.1f. E alterando sua menor nota, teremos que sua média vai ser de %.1f \n", notaAS, resultadoMedia);
+
+                // Verifica se passou na disciplna ou não 
                 if (resultadoMedia > 6) {
                     System.out.printf("Parabéns você conseguiu passar nessa discplina!", resultadoMedia);
                 }else {
