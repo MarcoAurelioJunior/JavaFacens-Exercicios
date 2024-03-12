@@ -1,3 +1,4 @@
+package exercicioFaculdadeFacens;
 import java.util.Scanner;//Import Scanner
 
 public class consumoMedioDeCombustivel {

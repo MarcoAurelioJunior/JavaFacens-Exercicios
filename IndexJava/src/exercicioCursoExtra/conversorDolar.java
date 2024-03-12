@@ -1,3 +1,4 @@
+package exercicioCursoExtra;
 import java.util.Scanner;
 
 public class conversorDolar {

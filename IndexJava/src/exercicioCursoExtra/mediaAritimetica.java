@@ -1,3 +1,4 @@
+package exercicioCursoExtra;
 
 // Exercicio: Média Aritimética
 
