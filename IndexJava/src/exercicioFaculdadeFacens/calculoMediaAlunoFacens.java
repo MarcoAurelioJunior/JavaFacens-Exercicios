@@ -30,19 +30,19 @@ public class calculoMediaAlunoFacens {
 
             //Verificação de aprovação ------------------------------------------------------------
             if (mediaFinal >= 5) { //Se maior ou igual a 5, APROVADO
-
-                System.out.printf("Sua média foi de: %.1f. Parabéns, você foi aprovado!", mediaFinal);
-
+                System.out.println("-------------------------------------------------------------");
+                System.out.printf("Sua média foi de: %.1f. Parabéns, você foi aprovado!\n", mediaFinal);
+                System.out.println("-------------------------------------------------------------");
             }else if(mediaFinal < 5){ //Se menor que 5, REPROVADO + Calculo de pontos faltantes
-
                 double valorQueFaltaParaMedia = mediaAceitavel - mediaFinal; //Cálcula os pontos que falta para a media aceitavel
+                System.out.println("-------------------------------------------------------------");
                 System.out.printf("Sua média foi de: %.1f. Infelizmente você foi reprovado \n",mediaFinal); 
-                System.out.printf("Ainda precisa de %.1f pontos para pelo menos passar com %.1f nessa disciplina! ", valorQueFaltaParaMedia, valorQueFaltaParaMedia+mediaFinal);
-
+                System.out.printf("Ainda precisa de %.1f pontos para pelo menos passar com %.1f nessa disciplina!\n", valorQueFaltaParaMedia, mediaAceitavel);
+                System.out.println("-------------------------------------------------------------");
             }else{ //Se der algum erro...
-
+                System.out.println("-------------------------------------------------------------");
                 System.out.println("Deu algum erro aí!");
-                
+                System.out.println("-------------------------------------------------------------");
             }
 
         scanner.close();
