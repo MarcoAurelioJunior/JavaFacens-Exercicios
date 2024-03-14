@@ -19,7 +19,7 @@ public class diaDeIdade {
             int idade = atualAno - idadeEmAnos; //Idade do usuario
 
             int calculoAnoParaDias = idade * 365;//Pega a idade e multiplica por 365
-            int calculoMesParaDias = (idadeEmAnosMes * 31) - 2 * idade ;//Descobre quantos meses ele viveu e multiplica por 31 além de tira 2 dias a cada mês (contando fevereiro)
+            int calculoMesParaDias = (idadeEmAnosMes * 31);//Descobre quantos meses ele viveu e multiplica por 31 além de tira 2 dias a cada mês (contando fevereiro)
 
             int calculoFinal = calculoAnoParaDias + calculoMesParaDias + idadeEmAnosDia;//Soma tudo
 
