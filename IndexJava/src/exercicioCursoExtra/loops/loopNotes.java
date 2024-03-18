@@ -1,4 +1,4 @@
-package exercicioCursoExtra;
+package exercicioCursoExtra.loops;
 
 import java.util.Scanner;
 
