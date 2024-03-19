@@ -27,7 +27,7 @@ public class anoBissesto {
                         System.out.printf("Explicação: \nEsse ano PODE ser dividido por cem, nesse caso dando resto %d, porém os anos bissextos não podem ser divisíveis por 100! \n", anoBissestoDivisivelCem);
                         System.out.println("----------------------------------------------------");
                     }else{ //Caso o valor divisível por 4 seja falso, aparecerá essa mensagem!
-                        System.out.printf("Explicação: \nPorque esse ano NÃO1 pode ser dividido por quatro, nesse caso dando resto %d \n", anoBissestoDivisivelQuatro);
+                        System.out.printf("Explicação: \nPorque esse ano NÃO pode ser dividido por quatro, nesse caso dando resto %d \n", anoBissestoDivisivelQuatro);
                         System.out.println("----------------------------------------------------");
                     }
                 

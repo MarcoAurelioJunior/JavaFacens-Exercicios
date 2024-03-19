@@ -16,7 +16,7 @@ public class consumoMedioDeCombustivel {
             // Cálculo do consumo e print -------------------------------------------------------------------------------------------------------------------
                 float calculoConsumoMedio = valorDistanciaPercorrida / valorQuantidadeCombustivel;//Faz o calculo do consumo médio
                 System.out.println("-------------------------------------------------------------");
-                System.out.printf("Você teve um consumo médio de combustível de %.2f km/l\n", calculoConsumoMedio);//Mostra na tela o resultado em km/l
+                System.out.printf("Você teve um consumo médio de combustível de %.2fkm/l\n", calculoConsumoMedio);//Mostra na tela o resultado em km/l
                 System.out.println("-------------------------------------------------------------");
         scanner.close();//Fecha o scanner
         

@@ -8,11 +8,11 @@ public class tipoTriangulo {
 
             //Scanner para pedir os lados de um trangulo
             System.out.print("Digite o valor do PRIMEIRO lado do triângulo: ");
-                double valorLado1 = scanner.nextDouble();
+                float valorLado1 = scanner.nextFloat();
             System.out.print("Digite o valor do SEGUNDO lado do triângulo: ");
-                double valorLado2 = scanner.nextDouble();
+                float valorLado2 = scanner.nextFloat();
             System.out.print("Digite o valor do TERCEIRO lado do triângulo: ");
-                double valorLado3 = scanner.nextDouble();
+                float valorLado3 = scanner.nextFloat();
 
             //Condições e classificação dos triângulos
             if(valorLado1 == valorLado2 && valorLado2 == valorLado3 && valorLado1 == valorLado3){ // Se todos os lados forem iguais, então...

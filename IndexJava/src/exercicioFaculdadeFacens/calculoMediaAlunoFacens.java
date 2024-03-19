@@ -8,24 +8,24 @@ public class calculoMediaAlunoFacens {
 
             //Pergunta as notas AC1, AC2, AG e AF ----------------------------------------------
             System.out.print("Digite a nota da sua AC1: ");
-                double valorAC1 = scanner.nextDouble();
+                float valorAC1 = scanner.nextFloat();
             System.out.print("Digite a nota da sua AC2: ");
-                double valorAC2 = scanner.nextDouble();
+                float valorAC2 = scanner.nextFloat();
             System.out.print("Digite a nota da sua AG: ");
-                double valorAG = scanner.nextDouble();
+                float valorAG = scanner.nextFloat();
             System.out.print("Digite a nota da sua AF: ");
-                double valorAF = scanner.nextDouble();
+                float valorAF = scanner.nextFloat();
 
             //Converte o valor da avaliação com o a sua devida porcentagem ----------------------
                 double mediaAceitavel = 5;
 
-                valorAC1 = valorAC1 * 0.15;
-                valorAC2 = valorAC2 * 0.30;
-                valorAG = valorAG * 0.10;
-                valorAF = valorAF * 0.45;
+                valorAC1 = valorAC1 * 0.15f;
+                valorAC2 = valorAC2 * 0.30f;
+                valorAG = valorAG * 0.10f;
+                valorAF = valorAF * 0.45f;
 
             //Faz o calculo da média final (soma) ------------------------------------------------
-            double mediaFinal = valorAC1 + valorAC2 + valorAG + valorAF;
+            float mediaFinal = valorAC1 + valorAC2 + valorAG + valorAF;
 
 
             //Verificação de aprovação ------------------------------------------------------------
