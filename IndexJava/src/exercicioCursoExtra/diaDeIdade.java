@@ -1,30 +1,65 @@
 package exercicioCursoExtra;
 import java.util.Scanner;
 
-//APLICAÇÃO EM MANUTENÇÃO!
-
 public class diaDeIdade {
     public static void main(String[] args) { //Pergunta idade ao usuario
         Scanner scanner = new Scanner(System.in);
 
-                System.out.println("Digite o dia em que nasceu: ");
-            int idadeEmAnosDia = scanner.nextInt();
-                System.out.println("Digite o mês em que nasceu: ");
-            int idadeEmAnosMes = scanner.nextInt();
-                System.out.println("Digite o ano em que nasceu: ");
-            int idadeEmAnos= scanner.nextInt();
+        System.out.println("Escolha uma das opções abaixo: ");
+        System.out.println("1 - Para saber os dias de vida");
+        System.out.println("2 - Para saber os meses de vida");
 
-            int atualAno = 2024; // Ano atual
+        int valorOpt = scanner.nextInt();
 
-            int idade = atualAno - idadeEmAnos; //Idade do usuario
-
-            int calculoAnoParaDias = idade * 365;//Pega a idade e multiplica por 365
-            int calculoMesParaDias = (idadeEmAnosMes * 31);//Descobre quantos meses ele viveu e multiplica por 31 além de tira 2 dias a cada mês (contando fevereiro)
-
-            int calculoFinal = calculoAnoParaDias + calculoMesParaDias + idadeEmAnosDia;//Soma tudo
-
-            System.out.printf("Você tem %d dias de idade!", calculoFinal);
-            
+        Opt(valorOpt);
         scanner.close();
+    }
+
+    public static void Opt(int OPT){
+
+        if (OPT == 1) {
+            Scanner scannerDias = new Scanner(System.in);
+
+                System.out.print("Em que dia você nasceu: ");
+                    int valorDia = scannerDias.nextInt();
+                System.out.print("Em que mês você nasceu: ");
+                    int valorMes = scannerDias.nextInt();
+                System.out.print("Em que ano você nasceu: ");
+                    int valorAno = scannerDias.nextInt();
+
+                int idadeUsuario = 2024 - valorAno;
+
+                int calculoMesParaDias = valorMes * 31;
+                int calculoAnoParaDias = idadeUsuario * 365;
+
+                int calculoIdadeParaDias =  calculoAnoParaDias + calculoMesParaDias + valorDia;
+
+                System.out.println("Você tem " + calculoIdadeParaDias + " dias de idade.");
+
+            scannerDias.close();
+
+        }else if(OPT == 2){
+            Scanner scannerMeses = new Scanner(System.in);
+
+                System.out.print("Em que dia você nasceu: ");
+                    int valorDia = scannerMeses.nextInt();
+                System.out.print("Em que mês você nasceu: ");
+                    int valorMes = scannerMeses.nextInt();
+                System.out.print("Em que ano você nasceu: ");
+                    int valorAno = scannerMeses.nextInt();
+
+                int idadeUsuario = 2024 - valorAno;
+
+                int calculoAnoParaDias = idadeUsuario * 31;
+
+                int calculoValorMeses =  calculoAnoParaDias + valorMes;
+
+                System.out.println("Você tem " + calculoValorMeses + " meses de vida e " + " valorAno");
+            
+            scannerMeses.close();
+            
+        }
+
+
     }
 }
