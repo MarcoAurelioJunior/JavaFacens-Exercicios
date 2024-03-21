@@ -40,9 +40,6 @@ public class diaDeIdade {
 
         }else if(OPT == 2){
             Scanner scannerMeses = new Scanner(System.in);
-
-                System.out.print("Em que dia você nasceu: ");
-                    int valorDia = scannerMeses.nextInt();
                 System.out.print("Em que mês você nasceu: ");
                     int valorMes = scannerMeses.nextInt();
                 System.out.print("Em que ano você nasceu: ");

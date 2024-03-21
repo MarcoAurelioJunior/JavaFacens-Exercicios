@@ -53,7 +53,7 @@ public class investigacaoCriminosa {
                 if (valor5 == 1) {
                     numSim += 1;
                 }
-                
+        scanner.close();      
         return numSim;
     }
 }
