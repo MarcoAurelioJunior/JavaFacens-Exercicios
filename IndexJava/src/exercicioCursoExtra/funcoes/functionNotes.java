@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class functionNotes {
 
-    public static void main(String[] args) { //Void = Função que não retorna algo
-        //Função comprarSorvete
-        System.out.println(comprarSorvete(10)); //Chama a função comprarSorvete e atribui 10 ao dinheiro
+    public static void main(String[] args) { //Void = don't return anything
+        //Function comprarSorvete
+        System.out.println(comprarSorvete(10)); //call the function comprarSorvete and assign 10 to dinheiro
 
-        //Função calculoMedia
+        //function calculoMedia
         Scanner scanner = new Scanner(System.in);
             System.out.print("Digite a nota 1: ");
             int valorNum1 = scanner.nextInt();
@@ -19,14 +19,14 @@ public class functionNotes {
             System.out.print("Digite a nota 3: ");
             int valorNum3 = scanner.nextInt();
 
-            System.out.println(calculoMedia(valorNum1, valorNum2, valorNum3)); //chama a função e coloca os parametros dos dígitos do usuário
+            System.out.println(calculoMedia(valorNum1, valorNum2, valorNum3)); //call the function and put the parameters of the user
         scanner.close();
     }
-    public static String comprarSorvete(float dinheiro){ //Cria a função do tipo String
-        return "Comprei o sorvete e custou R$ " + dinheiro; //Retorna o texto + a quantidade de dinheiro estabelecida
+    public static String comprarSorvete(float dinheiro){ //Create a function of type String
+        return "Comprei o sorvete e custou R$ " + dinheiro; //Return the variable "dinheiro" + string
     }
 
-    public static String calculoMedia(int num1, int num2, int num3) { //Cria função do tipo String, passando os parametros num1, num2, num3
-        return "O resultado da média vai ser de: " + (num1 + num2 + num3)/3; //Retorna o resultado somanddo e dividindo os parametros passados
+    public static String calculoMedia(int num1, int num2, int num3) { //Create a function calculoMedia() and assign num1, num2 and num3
+        return "O resultado da média vai ser de: " + (num1 + num2 + num3)/3; //return the values adding and dividing by 3
     }
 }

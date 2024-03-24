@@ -9,7 +9,7 @@ public class exercicioPosto {
             System.out.print("Insira o valor do litro: ");
             double valorLitro = scanner.nextDouble();
         
-            for (int i = 1; i <= 50; i++) {
+            for (int i = 1; i <= 50; i++) { //While i <= 50
                 System.out.println("Quantidade de litros: " + i + "| Valor do litro: " + valorLitro + "| Valor total: " + i*valorLitro );
             }
         scanner.close();
