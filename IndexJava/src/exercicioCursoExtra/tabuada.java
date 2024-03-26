@@ -17,4 +17,5 @@ public class tabuada {
 
         scanner.close();
     }
+
 }
