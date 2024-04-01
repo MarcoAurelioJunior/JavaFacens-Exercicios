@@ -66,7 +66,7 @@ public class arrayListNotes {
             System.out.println(Arrays.toString(nomes.toArray()));
 
         //
-
+    
     }
 
     public static List<String> adicionaNome(List<String> nomes) { //Cria um função do tipo List<String>
